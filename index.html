@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Encriptador de texto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="encriptador y desencriptador de texto">
+        <meta name="keywords" content="encriptador, desencriptador, texto">
+        <meta name="author" content="Luis Tapia B.">
+        <link rel="stylesheet" href="/styles/style.css">
+        <link rel="stylesheet" href="/styles/base.css">
+        <link rel="stylesheet" href="/styles/state.css">
+
+    </head>
+    <body> 
+        <header>
+            <img src="assets/Logo.svg" alt="Logo alura">
+        </header>
+        <main>
+            <section class="container">
+                <textarea autofocus autocapitalize="none" text-transform="lowercase" class="textbox" placeholder="ingrese el texto aqui"></textarea>
+                <div class="msj_footer">
+                    <div id="nota">
+                        <svg id="alerta" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20"><path fill="currentColor" d="M2.93 17.07A10 10 0 1 1 17.07 2.93A10 10 0 0 1 2.93 17.07M9 5v6h2V5zm0 8v2h2v-2z"/></svg>
+                        <p>Solo letras minúsculas y sin acentos</p>
+                    </div>
+                    <div class="botones">
+                        <button class="encriptar btn_izquierda btn_azul" onclick="encriptar()">Encriptar</button>
+                        <button class="desencriptar btn_izquierda btn_claro" onclick="desencriptar()">Desencriptar</button>
+                    </div>
+                </div>
+            </section>            
+            <section class="slider">
+                <textarea readonly class="resultado"></textarea>
+                <img id="muñeco" src="assets/muñeco.svg" alt="caricatura de un niño mirando un diamante con una lupa">
+                <div class="avisos">
+                    <p class="aviso1">Ningún mensaje fue encontrado</p>
+                    <p class="aviso2">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+                <button class="copiar btn_claro" >Copiar</button>
+            </section>
+        </main>
+        <script src="encriptador.js"></script>
+    </body>
+</html>
