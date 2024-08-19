@@ -61,4 +61,8 @@
   .container { 
     width: 100%;
   }
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
 }
