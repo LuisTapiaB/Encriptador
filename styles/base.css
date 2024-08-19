@@ -1,5 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+:root{
+  /*brand colors*/
+  --dark-blue-100:#609ED4;
+  --dark-blue-200:#356EA9;
+  --dark-blue-300:#0a3871;
+  --dark-blue-400:#072b61;
+  --dark-blue-500:#052051;
+  --light-blue-100:#F3F5FC;
+  --light-blue-200:#EFF1FA;
+  --light-blue-300:#E9ECF8;
+  --light-blue-400:#AAB2D5;
+  --light-blue-500:#757FB2;
+  --gray-400:#495057;
+  --gray-500:#343A40;
+
+  /*theme colors*/
+  --main-color:white;
+  --primary-color: var(--light-blue-100);
+  --secundary-color:var(--dark-blue-300);
+  --secundary-color-hover:var(--dark-blue-400);
+  --primary-color-hover:var(--light-blue-200);
+  --tertiary-color:var(--gray-400);
+
+}
 * {
   font-family: "Inter";
   margin: 0;
@@ -13,7 +37,7 @@ body {
   justify-content: space-evenly;
   align-items: flex-start;
   box-sizing: border-box;
-  background-color: #F3F5FC;
+  background-color: var(--primary-color);
   height: 100vh;
   width:-webkit-fill-available;
   padding: 40px;
@@ -28,7 +52,7 @@ header {
 
 button{
   border: solid;
-  border-color: rgb(10, 56, 113);
+  border-color: var(--secundary-color);
   border-width: 1px;
   height: 67px;
   border-radius:24px;
@@ -41,7 +65,7 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  color: #F3F5FC;
-  background-color: rgb(10, 56, 113);
+  color: var(--primary-color);
+  background-color: var(--secundary-color);
   justify-content: space-evenly;
 }

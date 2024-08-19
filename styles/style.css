@@ -13,7 +13,7 @@ main{
   justify-content: space-between;
 }
 .textbox {
-  color: #1100ff;
+  color: var(--secundary-color);
   background-color: transparent;
   font-size: 32px;
   line-height: 150%;
@@ -23,7 +23,7 @@ main{
   height: 80%;
 }
 .textbox::placeholder {
-  color: #0A3871;
+  color: var(--secundary-color);
 }
 .msj_footer{
   display: flex;
@@ -37,12 +37,12 @@ main{
 }
 
 .encriptar {
-  color: white;
-  background-color: rgb(10, 56, 113);
+  color: var(--main-color);
+  background-color: var(--secundary-color);
 }
 .btn_claro {
-  color: rgb(10, 56, 113);
-  background-color: white;
+  color: var(--secundary-color);
+  background-color: transparent;
 }
 
 .btn_izquierda {
@@ -55,7 +55,7 @@ width: 328px;
 #nota {
   display: flex;
   flex-direction: row;
-  color: gray;
+  color: var(--tertiary-color);
   line-height: 150%;
   font-size: 12px;
   gap: 8px;
@@ -68,7 +68,7 @@ width: 328px;
   justify-content: center;
   width: 400px;
   padding: 32px;
-  background-color: white;
+  background-color: var(--main-color);
   border-radius: 32px;
   box-shadow: 0px 24px 32px 8px rgb(0, 0, 0, 0.08);
 }
@@ -83,11 +83,12 @@ width: 328px;
   line-height: 120%;
   font-size: 24px;
   font-weight: bold;
+  color: var(--gray-500);
 }
 .aviso2 {
   font-size: 16px;
   line-height: 150%;
-  color: #495057;
+  color:var(--tertiary-color);
 }
 textarea.resultado, button.copiar {
   display: none;
@@ -95,7 +96,7 @@ textarea.resultado, button.copiar {
 textarea.resultado {
   font-size: 24px;
   font-weight: normal;
-  color: #495057;
+  color: var(--tertiary-color);
   border-style: none;
   resize: none;
   outline: none;

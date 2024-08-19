@@ -1,9 +1,9 @@
 .btn_claro:hover {
-    background-color: lightblue;
+    background-color:var(--primary-color-hover);
   }
 
 .btn_azul:hover {
-    background-color: #072B61;
+    background-color: var(--secundary-color-hover);
   }
 
 @media screen and (max-width:1271px) {
