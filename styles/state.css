@@ -38,7 +38,8 @@
     padding-top: 0px;
   }
   #muñeco {
-    display:none;
+    width: 0;
+    height: 0;
   }
 }
 
