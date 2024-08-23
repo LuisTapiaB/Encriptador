@@ -60,10 +60,11 @@ function desencriptar() {
 //función para copiar con metodo execCommand
 function copy() {
     let copyText = document.querySelector(".resultado");
-    copyText.select();
-    document.execCommand("copy");
-    document.getSelection().removeAllRanges();
-    document.querySelector(".copiar").textContent = "Copiado!!";
+    navigator.clipboard.writeText(copyText.value).then(() => {
+       document.querySelector(".copiar").textContent = "Copiado!!";
+    }).catch(err => {
+        console.error('Error al copiar: ', err);
+    });
     return;
 }
 document.querySelector(".copiar").addEventListener("click", copy);
